@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LeetCode Profile Viewer</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+
+    <h1>LeetCode Profile Viewer</h1>
+
+    <div class="input-group">
+      <input type="text" id="username" placeholder="Enter LeetCode username">
+      <button id="search-card" onclick="getProfile()">Search</button>
+    </div>
+
+    <div id="error"></div>
+
+    <div id="profile">
+      <div class="username" id="name"></div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>Total Solved</h3>
+          <p id="solved">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Ranking</h3>
+          <p id="rank">0</p>
+        </div>
+      </div>
+
+      <div class="difficulty-stats">
+        <div class="difficulty easy">
+          <h4>Easy</h4>
+          <p id="easy">0</p>
+        </div>
+        <div class="difficulty medium">
+          <h4>Medium</h4>
+          <p id="medium">0</p>
+        </div>
+        <div class="difficulty hard">
+          <h4>Hard</h4>
+          <p id="hard">0</p>
+        </div>
+      </div>
+
+      <div class="ranking">Global Ranking</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
